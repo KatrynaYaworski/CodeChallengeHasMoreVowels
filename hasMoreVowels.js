@@ -27,15 +27,15 @@ hasMoreVowels('Aal')
 */
 
 function hasMoreVowels(word) {
-    word = word.toUpperCase()
+    word = word.toUpperCase();
     const vowels = ['A', 'E', 'I', 'O', 'U'];
-    let sum = 0
+    let sum = 0;
     for (let i = 0; i < word.length; i++) {
         if (vowels.includes(word[i])) {
             sum += 1
         }
     }
-    return sum >= word.length/2
+    return sum >= word.length / 2
 }
 
 console.log(hasMoreVowels('Ape'))
